@@ -1,0 +1,10 @@
+var names=localStorage.getItem("namesV");
+var tCS=localStorage.getItem("tCSV");
+var pCS=localStorage.getItem("pCSV");
+var tComm=localStorage.getItem("tCommV");
+var pComm=localStorage.getItem("pCommV");
+var tGraphics=localStorage.getItem("tGraphicsV");
+var pGraphics=localStorage.getItem("pGraphicsV");
+var tMath=localStorage.getItem("tMathV");
+var pMath=localStorage.getItem("pMathV");
+alert(names);

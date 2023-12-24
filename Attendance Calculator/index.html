@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Attendance Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Attendance Calculator</h1>
+        <a href="#" class="nav">
+            <div class="p"></div>
+            <div class="q"></div>
+            <div class="r"></div>
+        </a>
+    </header>
+    <div id="data">
+        <form id="form" action="displayPage.html" method="post">
+            <label for="name">Enter Your Name :</label>
+            <input type="text" id="name" placeholder="Enter Your Name"><br><br>
+            <p>Enter Number of Classes and for how many you were pesent repectively!!</p>
+            <label for="cs">CS:</label><br>
+            <input type="number" id="tCS" placeholder="Total CS"> <input type="number" id="pCS" placeholder="Present CS"><br><br>
+            <label for="comm">Communication :</label><br>
+            <input type="number" id="tComm" placeholder="Total Communication"> <input type="number" id="pComm" placeholder="Present Communication"><br><br>
+            <label for="graphics">Graphics :</label><br>
+            <input type="number" id="tGraphics" placeholder="Total Graphics"> <input type="number" id="pGraphics" placeholder="Present Graphics"><br><br>
+            <label for="math">Maths :</label><br>
+            <input type="number" id="tMath" placeholder="Total Maths"> <input type="number" id="pMath" placeholder="Present Maths"><br><br>
+            <input type="submit" onclick="sendData();">
+        </form>
+    </div>
+    <footer>
+        <a href="#" class="social git"><img src="gitIcon.png"></a>
+        <a href="#" class="social in"><img src="linkedInIcon.png" ></a>
+        <a href="#" class="social ig"><img src="igIcon.png" ></a>
+        <p>Copyrighted under © Prasun Biswas</p>
+    </footer>
+    <script src="calcData.js"></script>
+</body>
+</html>
