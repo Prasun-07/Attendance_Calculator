@@ -3,103 +3,124 @@ body{
     margin: 0px;
 }
 header{
-    padding: 0px;
-    margin: 0px;
+    background-color: #C5FFF8;
+    padding: 0;
+    margin: 0;
     width: 100%;
-    background-color: rgba(100, 0, 0, 0.5); 
     position: relative;
     top: 0;
     left: 0;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: baseline;
 }
 header h1{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 4rem;
-    padding: 5px;
-    margin: 0px;
-    background-color: bisque;
+    color: #5FBDFF;
+    letter-spacing: 0.3vw;
+    /*-webkit-text-stroke-width: 0.1vh; 
+    -webkit-text-stroke-color: #22A3FF;*/
+    text-shadow: 0.12vw 0.22vh 0.2vh black;
+    font-family: 'Roboto Slab', serif;
+    font-size: 6vh;
+    padding: 1.5vw;
+    margin: 0;
 }
-#data{
-    position: relative;
-    left: 0px;
-    background-color: green;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 3rem;
-}
+
+/*three-line navigation*/
 .nav {
-    width: 30px;
+    width: 2vw;
+    padding: 0 3.5vw 0 4vw;
     display: block;
-    margin: 0px auto;
     transition: all 0.5s;
    -webkit-transition: all 0.5s;
 }
 .nav div{
-    height: 5px;
-    background: black;
-    margin: 5px 0px 5px 0px;
-    border-radius: 25px;
+    height: 0.62vh;
+    background: #7B66FF;
+    margin: 0.4vh 0vw 0.4vh 0vw;
+    border-radius: 1.8vw;
     transition: all 0.5s;
    -webkit-transition: all 0.5s;
 }
 .q { 
-    width: 21px;
+    width: 1.5vw;
 }
 .s { 
-    width: 30px;
+    width: 2vw;
 }
 .nav:hover div { 
-    width: 30px;
+    width: 2vw;
+}
+
+/*receiving input*/
+#data{
+    color: #C5FFF8;
+    background-color: #C5FFF8;
+    position: relative;
+    left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.35vw;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 1.13vw;
 }
 form{
-    padding: 2rem;
-    background-color: turquoise;
-    border: 5px solid black;
-    border-radius: 0.6rem;
+    background-color: #27a5ff;
+    padding: 1.53vw;
+    border: 0.7vh solid #7B66FF ;
+    border-radius: 4vh;
 }
 input[type=number], input[type=text]{
-    background-color: blanchedalmond;
-    height: 1.5rem;
-    border-radius: 0.5rem;
-    padding:0.2rem;
+    background-color: #C5FFF8;
+    height: 1.1vh;
+    border-radius: 0.9vh;
+    padding:0.6vw;
 }
 input[type=number]:focus, input[type=text]:focus{
     border:solid red;
 
 }
 input[type=submit]{
-    height:2.5rem;
-    width: fit-content;
-    padding: 0.3rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-    font-size: 1.5rem;
-    background-color: aqua;
-    border-radius: 0.5rem;
-    box-shadow: 0.2rem 0.2rem 0.1rem inset;
+    height:4.3vh;
+    width: 5vw;
+    padding: 0.6vh 0.7vw;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2vw;
+    font-weight: 0.1vw;
+    background-color: #7B66FF;
+    border-radius: 1.5vh;
+    box-shadow: 0.15vh 0.15vw 0.15vh #7B66FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 input[type=submit]:hover{
-    background-color: rgba(0,255,255,0) ;
+    background-color: #96EFFF;
+    color: #27a5ff;
+    box-shadow: 0.15vh 0.15vw 0.15vh black;
 }
+
+/*footer*/
 footer{
+    background-color: #7B66FF;
     display: grid;
-    height: 5rem;
-    padding: 2rem;
-    background-color: rgb(160, 135, 226);
+    height: 9vh;
+    padding: 1vw;
     grid-template-columns: 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.12%;
-    grid-template-rows: 3.5rem 1.5rem;
-    
+    grid-template-rows: 5vh 4vh;
+}
+footer a{
+    text-decoration: none;
 }
 footer .git{
     grid-column-start: 4;
     grid-column-end: 5;
     display: flex;
     justify-content: center;
+    color: white;
 }
 footer .in{
     grid-column: span 1;
@@ -111,24 +132,25 @@ footer .ig{
     display: flex;
     justify-content: center;
 }
-footer .git img{
-    height: 2vw;
-    width: 2vw;
+footer .fa-instagram{
+    font-size: 2.3vw;
+    color: #C5FFF8;
 }
-footer .in img{
-    height: 2vw;
-    width: 2vw;
+footer .fa-linkedin{
+    font-size: 2.3vw;
+    color: #C5FFF8;
 }
-footer .ig img{
-    height: 2vw;
-    width: 2vw;
+footer .fa-github{
+    font-size: 2.3vw;
+    color: #C5FFF8;
 }
 footer p{
     grid-row-start: 2;
     grid-column-start:4 ;
     grid-column-end:7 ;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
-    font-size: 1.5rem;
+    color: #C5FFF8;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1vw;
     display: flex;
     justify-content: center;
 }
