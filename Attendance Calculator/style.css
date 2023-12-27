@@ -16,12 +16,12 @@ header{
     align-items: baseline;
 }
 header h1{
-    color: #5FBDFF;
+    color: #51b5fd;
     letter-spacing: 0.3vw;
     /*-webkit-text-stroke-width: 0.1vh; 
     -webkit-text-stroke-color: #22A3FF;*/
     text-shadow: 0.12vw 0.22vh 0.2vh black;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Lora', serif;
     font-size: 6vh;
     padding: 1.5vw;
     margin: 0;
