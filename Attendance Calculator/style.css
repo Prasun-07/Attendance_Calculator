@@ -64,43 +64,58 @@ header h1{
     justify-content: center;
     font-size: 1.35vw;
     font-family: 'Ubuntu', sans-serif;
-    padding: 1.13vw;
+    padding: 1.13vw 1.13vw 0vw 1.13vw;
 }
 form{
-    background-color: #27a5ff;
+    background-color: #7B66FF;
     padding: 1.53vw;
-    border: 0.7vh solid #7B66FF ;
-    border-radius: 4vh;
+    border-top-width: 0.7vh;
+    border-right-width: 0.7vh;
+    border-bottom-width: 0vh;
+    border-left-width: 0.7vh;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #7B66FF;
+    border-right-color:#7B66FF;
+    border-left-color: #7B66FF;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-radius: 4vh 4vh 0vh 0vh;
+    margin-top: 3.5vh;
 }
 input[type=number], input[type=text]{
     background-color: #C5FFF8;
     height: 1.1vh;
+    border: 0.1vw solid #C5FFF8;
     border-radius: 0.9vh;
     padding:0.6vw;
 }
 input[type=number]:focus, input[type=text]:focus{
-    border:solid red;
-
+    color: black;
 }
 input[type=submit]{
     height:4.3vh;
     width: 5vw;
     padding: 0.6vh 0.7vw;
-    color: white;
+    color: #7B66FF;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.2vw;
     font-weight: 0.1vw;
-    background-color: #7B66FF;
-    border-radius: 1.5vh;
-    box-shadow: 0.15vh 0.15vw 0.15vh #7B66FF;
+    background-color: #C5FFF8;
+    border-radius: 1.3vh;
+    box-shadow: 0.15vh 0.15vw 0.15vh black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 input[type=submit]:hover{
-    background-color: #96EFFF;
-    color: #27a5ff;
-    box-shadow: 0.15vh 0.15vw 0.15vh black;
+    background-color: #7B66FF;
+    color: #C5FFF8;
+    box-shadow: none;
 }
 
 /*footer*/
