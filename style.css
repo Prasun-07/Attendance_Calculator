@@ -1,0 +1,171 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    background-color: #C5FFF8;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+header h1{
+    color: #51b5fd;
+    letter-spacing: 0.3vw;
+    /*-webkit-text-stroke-width: 0.1vh; 
+    -webkit-text-stroke-color: #22A3FF;*/
+    text-shadow: 0.12vw 0.22vh 0.2vh black;
+    font-family: 'Lora', serif;
+    font-size: 6vh;
+    padding: 1.5vw;
+    margin: 0;
+}
+
+/*three-line navigation*/
+.nav {
+    width: 2vw;
+    padding: 0 3.5vw 0 4vw;
+    display: block;
+    transition: all 0.5s;
+   -webkit-transition: all 0.5s;
+}
+.nav div{
+    height: 0.62vh;
+    background: #7B66FF;
+    margin: 0.4vh 0vw 0.4vh 0vw;
+    border-radius: 1.8vw;
+    transition: all 0.5s;
+   -webkit-transition: all 0.5s;
+}
+.q { 
+    width: 1.5vw;
+}
+.s { 
+    width: 2vw;
+}
+.nav:hover div { 
+    width: 2vw;
+}
+
+/*receiving input*/
+#data{
+    color: #C5FFF8;
+    background-color: #C5FFF8;
+    position: relative;
+    left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.35vw;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 1.13vw 1.13vw 0vw 1.13vw;
+}
+form{
+    background-color: #7B66FF;
+    padding: 1.53vw;
+    border-top-width: 0.7vh;
+    border-right-width: 0.7vh;
+    border-bottom-width: 0vh;
+    border-left-width: 0.7vh;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #7B66FF;
+    border-right-color:#7B66FF;
+    border-left-color: #7B66FF;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-radius: 4vh 4vh 0vh 0vh;
+    margin-top: 3.5vh;
+}
+input[type=number], input[type=text]{
+    background-color: #C5FFF8;
+    height: 1.1vh;
+    border: 0.1vw solid #C5FFF8;
+    border-radius: 0.9vh;
+    padding:0.6vw;
+}
+input[type=number]:focus, input[type=text]:focus{
+    color: black;
+}
+input[type=submit]{
+    height:4.3vh;
+    width: 5vw;
+    padding: 0.6vh 0.7vw;
+    color: #7B66FF;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2vw;
+    font-weight: 0.1vw;
+    background-color: #C5FFF8;
+    border-radius: 1.3vh;
+    box-shadow: 0.15vh 0.15vw 0.15vh black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type=submit]:hover{
+    background-color: #7B66FF;
+    color: #C5FFF8;
+    box-shadow: none;
+}
+
+/*footer*/
+footer{
+    background-color: #7B66FF;
+    display: grid;
+    height: 9vh;
+    padding: 1vw;
+    grid-template-columns: 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.12%;
+    grid-template-rows: 5vh 4vh;
+}
+footer a{
+    text-decoration: none;
+}
+footer .git{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+footer .in{
+    grid-column: span 1;
+    display: flex;
+    justify-content: center;
+}
+footer .ig{
+    grid-column: span 1;
+    display: flex;
+    justify-content: center;
+}
+footer .fa-instagram{
+    font-size: 2.3vw;
+    color: #C5FFF8;
+}
+footer .fa-linkedin{
+    font-size: 2.3vw;
+    color: #C5FFF8;
+}
+footer .fa-github{
+    font-size: 2.3vw;
+    color: #C5FFF8;
+}
+footer p{
+    grid-row-start: 2;
+    grid-column-start:4 ;
+    grid-column-end:7 ;
+    color: #C5FFF8;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+}

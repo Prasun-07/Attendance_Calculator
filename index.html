@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+                integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Slab&family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Attendance Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Attendance Calculator</h1>
+        <a href="#" class="nav">
+            <div class="p"></div>
+            <div class="q"></div>
+            <div class="r"></div>
+        </a>
+    </header>
+    <div id="data">
+        <form id="form" action="displayPage.html" method="post">
+            <label for="name">Enter Your Name :</label>
+            <input type="text" id="name" placeholder="Enter Your Name"><br><br>
+            <p>Enter Number of Classes and for how many you were pesent repectively!!</p>
+            <label for="cs">CS:</label><br>
+            <input type="number" id="tCS" placeholder="Total CS"> <input type="number" id="pCS" placeholder="Present CS"><br><br>
+            <label for="comm">Communication :</label><br>
+            <input type="number" id="tComm" placeholder="Total Communication"> <input type="number" id="pComm" placeholder="Present Communication"><br><br>
+            <label for="graphics">Graphics :</label><br>
+            <input type="number" id="tGraphics" placeholder="Total Graphics"> <input type="number" id="pGraphics" placeholder="Present Graphics"><br><br>
+            <label for="math">Maths :</label><br>
+            <input type="number" id="tMath" placeholder="Total Maths"> <input type="number" id="pMath" placeholder="Present Maths"><br><br>
+            <input type="submit" onclick="sendData();">
+        </form>
+    </div>
+    <footer>
+        <a href="https://github.com/Prasun-07" class="social git"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/prasun-biswas-953874254/" class="social in"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/prasun_ps.07/" class="social ig"><i class="fa-brands fa-instagram"></i></a>
+        <p>Copyrighted under © Prasun Biswas</p>
+    </footer>
+    <script src="calcData.js"></script>
+</body>
+</html>
